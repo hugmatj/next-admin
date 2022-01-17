@@ -1,0 +1,21 @@
+{
+  "Title": "Playground Page",
+  "Desc": "This is the description of the playground page. Yeah I know, it's absolutely ugly and I'm way too lazy to update it.",
+  "Features": [
+    "The playground is fun and easy to mess with",
+    "The playground is run by JSON",
+    "It updates in realtime when development mode is on in next.js"
+  ],
+  "Posts": [
+    {
+      "title": "Test Blog Post",
+      "body": "This is a test blog post that is on the playground blog page",
+      "id": "2d0eb78c-d671-4ce1-9137-a6379153f084"
+    },
+    {
+      "title": "Bloog Poost",
+      "body": "This is another blog post on the playground page.",
+      "id": "599695d0-bab8-463a-a381-3191cd0182ab"
+    }
+  ]
+}
