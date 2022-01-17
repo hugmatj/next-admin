@@ -29,7 +29,7 @@ app.post((req, res) => {
     })
   } else {
     if (req.body.password === process.env.ADMIN_PASSWORD) {
-      res.setHeader('Set-Cookie', serialize('admin_session', process.env.ADMIN_SESSION, { path: '/', maxAge: 1000 * 30 }));
+      res.setHeader('Set-Cookie', serialize('admin_session', process.env.ADMIN_SESSION, { path: '/', maxAge: 1000 * 30 * 60 }));
       res.json({ success: true })
     } else {
       res.status(401).json({
