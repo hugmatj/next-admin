@@ -134,3 +134,6 @@ writeJSON((json) => ({
   "field2", "value"
 }))
 ```
+
+### Troubleshooting
+If for some reason you are getting internal server errors on vercel or something, that means the path to the JSON file is incorrect.  Go to `scripts/util.js` and edit the path of the JSON file or set the env value JSON_PATH to the correct folder path.  By default, the json file is in `.next/.../data/data.json` but it might be elsewhere in production.
