@@ -1,6 +1,7 @@
 import editJsonFile from 'edit-json-file'
 //get the _absolute_ **absolute** path of data.json file
-const data = editJsonFile(__dirname.split`/`.splice(0, __dirname.split`/`.length-4).join`/` + '/data/data.json')
+const directory = __dirname.split`/`.splice(0, __dirname.split`/`.length-4).join`/` + '/data/data.json'
+const data = editJsonFile(process.env.JSON_PATH || directory)
 
 export function getJSON(){
   return data.get();
